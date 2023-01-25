@@ -9,6 +9,10 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MiniStatementComponent } from './mini-statement/mini-statement.component';
+import { FilterPipe } from './filter.pipe';
+import { DeleteConfirmComponent } from './delete-confirm/delete-confirm.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    MiniStatementComponent,
+    FilterPipe,
+    DeleteConfirmComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

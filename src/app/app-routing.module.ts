@@ -3,6 +3,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { MiniStatementComponent } from './mini-statement/mini-statement.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
@@ -17,6 +19,14 @@ const routes: Routes = [
 {
   //dashboard-http://localhost:4200/dashboard
  path:'dashboard' , component:DashboardComponent
+},
+{
+  //miniStatement-http://localhost:4200/ministatement
+  path:'ministatement', component: MiniStatementComponent
+},
+{
+  // page not found
+  path:'**', component: PageNotFoundComponent 
 }
 ];
 
