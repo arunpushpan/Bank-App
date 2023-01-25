@@ -50,6 +50,10 @@ export class LoginComponent {
       // client
       (result:any)=>{
          this.errorMsg = result.error.message
+         setTimeout(()=>{
+          this.errorMsg=""
+          this.loginForm.reset()
+         },3000)
       }
       )
     }
